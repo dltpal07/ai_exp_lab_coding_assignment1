@@ -312,7 +312,7 @@ def main(**kwargs):
 
     create_kaggle_submit_csv(y_pred, y_test)
 
-
+# you can run this file => python3 main.py linear_10
 if __name__ == '__main__':
     p = argparse.ArgumentParser()
     p.add_argument('model')
