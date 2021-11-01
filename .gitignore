@@ -5,3 +5,5 @@
 .out
 .synctex.gz
 /data
+/__pycache__
+/.idea
