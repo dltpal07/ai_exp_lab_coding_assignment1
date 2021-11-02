@@ -16,7 +16,7 @@ class Model():
                   'bagging_freq': 5,
                   'seed': 2020,
                   'max_bin': 32,
-                  'num_iterations': 150000}
+                  'num_iterations': 100000}
         self.lgb_model = None
 
     def train(self, x_train, y_train):
