@@ -18,7 +18,7 @@ class Model:
         )
         self.loss_fn = torch.nn.MSELoss()
         self.optimizer = torch.optim.Adam(self.mlp_model.parameters(), lr=0.01)
-        self.num_epochs = 5
+        self.num_epochs = 500
 
     def x_tensor_data(self, data):
         x_tensor = torch.from_numpy(pd.get_dummies(data).values).float()
