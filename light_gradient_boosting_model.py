@@ -22,7 +22,7 @@ class Model():
     def train(self, x_train, y_train):
         train_ds = lgb.Dataset(x_train, label=y_train)
         self.lgb_model = lgb.train(self.params, train_ds, 1000, train_ds, verbose_eval=100, early_stopping_rounds=100)
-        print(self.lgb_model)
+
     def predict(self, x_val):
         pred_y = self.lgb_model.predict(x_val)
         return pred_y
